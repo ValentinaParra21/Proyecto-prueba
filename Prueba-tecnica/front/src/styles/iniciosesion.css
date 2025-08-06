@@ -1,79 +1,135 @@
-/* Fondo general opcional */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(to right, #6b848f, #9fdabd);
+  min-height: 100vh;
+}
+
+
 .iniciosesion-wrapper {
-  background-image: url('../img/iniciofondo.jpg');
-  background-size: cover;        
-  background-position: center;    
-  background-repeat: no-repeat;  
-  min-height: 85.7vh;              
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
-  box-sizing: border-box;        
+  padding: 2rem;
+  min-height: 100vh;
 }
+
 
 .iniciosesion-container {
-  background-color: #ffffff;
-  padding: 2.5rem 2rem;
-  border-radius: 16px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  padding: 3rem 2rem;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
   width: 100%;
-  max-width: 400px;
+  max-width: 420px;
   text-align: center;
-  font-family: 'Segoe UI', sans-serif;
 }
-
 
 .iniciosesion-title {
   font-size: 1.8rem;
-  font-weight: bold;
-  color: #1f2937;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 0.3rem;
+}
+
+.iniciosesion-subtitle {
+  font-size: 1rem;
+  color: #64748b;
   margin-bottom: 2rem;
+  margin-top: 20px;
+}
+
+
+.iniciosesion-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
 }
 
 
 .inputg {
+  position: relative;
   display: flex;
   align-items: center;
-  border: 1px solid #d1d5db;
-  border-radius: 8px;
-  padding: 0.5rem 0.75rem;
-  background-color: #f9fafb;
-  margin-bottom: 1.2rem;
-  transition: border-color 0.3s;
+  background-color: #f8fafc;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  padding: 0.75rem 1rem;
+  transition: 0.3s ease;
 }
 
-.inputg:focus-within {
-  border-color: #1f2937;
-}
-
-
-.icon {
-  color: #6b7280;
-  font-size: 1rem;
-  margin-right: 0.5rem;
-}
 .inputg input {
+  flex: 1;
   border: none;
   outline: none;
-  font-size: 1rem;
-  flex: 1;
   background: transparent;
+  font-size: 1rem;
+  padding: 0.2rem 0;
+  color: #1e293b;
 }
 
+.inputg input::placeholder {
+  color: #94a3b8;
+}
+
+.icon {
+  margin-right: 0.7rem;
+  color: #94a3b8;
+  font-size: 1rem;
+}
+
+
+.form-links {
+  text-align: right;
+  font-size: 0.85rem;
+}
+
+.forgot-link {
+  color: #3b82f6;
+  text-decoration: none;
+}
+
+.forgot-link:hover {
+  text-decoration: underline;
+}
+
+
 .iniciosesion-button {
-  width: 100%;
-  padding: 0.75rem;
-  background-color: #1f2937;
+  padding: 0.9rem;
+  background-color: #002664;
   color: white;
   border: none;
-  border-radius: 8px;
+  border-radius: 10px;
   font-size: 1rem;
-  font-weight: bold;
+  font-weight: 600;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s ease;
 }
 
 .iniciosesion-button:hover {
-  background-color: #00a51b;
+  background-color: #1aa047;
+}
+
+
+.register-link {
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  color: #475569;
+}
+
+.register-link a {
+  color: #7c3aed;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
 }
