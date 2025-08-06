@@ -34,12 +34,12 @@ DJANGO - BACKEND
 - (Activar entorno virtual) python -m venv env
 - .env\Scripts\activate
 - python manage.py migrate
-- python manage.py loaddata usuarios_iniciales.json
 - python manage.py runserver
 
 REACT - FRONTEND
 - git clone "url repositorio"
 - cd front
 - npm install 
-- npm run dev 
+- npm run dev
+- npm start
 ------------------------------------------------------------------------------------
