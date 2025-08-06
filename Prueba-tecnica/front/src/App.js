@@ -1,16 +1,27 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Iniciosesion from './components/Iniciosesion';
 import Actas from './components/Actas';
 import Navbar from './components/navbar';
 
-function App() {
+const AppWrapper = () => {
+  const location = useLocation();
+  const mostrarNavbar = location.pathname === '/actas';
   return (
-    <Router>
-      <Navbar />
+    <>
+      {mostrarNavbar && <Navbar />}
       <Routes>
         <Route path="/" element={<Iniciosesion />} />
         <Route path="/actas" element={<Actas />} />
       </Routes>
+    </>
+  );
+};
+
+function App() {
+  return (
+    <Router>
+      <AppWrapper />
     </Router>
   );
 }
