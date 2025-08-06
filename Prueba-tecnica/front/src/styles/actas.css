@@ -4,7 +4,7 @@
   background-size: cover;      
   background-position: center;   
   background-repeat: no-repeat;   
-  min-height: 75.7vh;             
+  min-height: 100vh;             
   padding: 2rem;
   display: flex;
   justify-content: center;
@@ -80,7 +80,7 @@
   color: #4b5563;
 }
 
-/* Botón Ver */
+
 .btn-ver {
   padding: 0.4rem 0.8rem;
   background-color: #150047;
@@ -95,7 +95,7 @@
   background-color: #0da100;
 }
 
-/* Botón flotante */
+
 .btn-flotante {
   position: fixed;
   bottom: 30px;
@@ -115,7 +115,6 @@
   background-color: #06ac00;
 }
 
-/* ===== MODAL (Formulario y Detalle Acta) ===== */
 .modal {
   position: fixed;
   top: 0;
@@ -144,7 +143,7 @@
   color: #150047;
 }
 
-/* Formulario dentro del modal */
+
 .modal-contenido form {
   display: flex;
   flex-direction: column;
