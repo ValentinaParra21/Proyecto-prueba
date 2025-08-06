@@ -1,0 +1,79 @@
+/* Fondo general opcional */
+.iniciosesion-wrapper {
+  background-image: url('../img/iniciofondo.jpg');
+  background-size: cover;        
+  background-position: center;    
+  background-repeat: no-repeat;  
+  min-height: 85.7vh;              
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  box-sizing: border-box;        
+}
+
+.iniciosesion-container {
+  background-color: #ffffff;
+  padding: 2.5rem 2rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+
+.iniciosesion-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #1f2937;
+  margin-bottom: 2rem;
+}
+
+
+.inputg {
+  display: flex;
+  align-items: center;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 0.5rem 0.75rem;
+  background-color: #f9fafb;
+  margin-bottom: 1.2rem;
+  transition: border-color 0.3s;
+}
+
+.inputg:focus-within {
+  border-color: #1f2937;
+}
+
+
+.icon {
+  color: #6b7280;
+  font-size: 1rem;
+  margin-right: 0.5rem;
+}
+.inputg input {
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  flex: 1;
+  background: transparent;
+}
+
+.iniciosesion-button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #1f2937;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.iniciosesion-button:hover {
+  background-color: #00a51b;
+}
